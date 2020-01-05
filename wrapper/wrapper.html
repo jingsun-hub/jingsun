@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="wrapper.css" type="text/css">
+    <title>Wrapper</title>
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="nav">
+            <li>
+                <a href="#">洗护用品</a>
+                <ul class="detail">
+                    <li>洗发水</li>
+                    <li>护发素</li>
+                    <li>沐浴露</li>
+                    <li>洗面奶</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">厨房用品</a>
+                <ul class="detail">
+                    <li>筷子</li>
+                    <li>碗</li>
+                    <li>锅</li>
+                    <li>保鲜盒</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">纸品家清</a>
+                <ul class="detail">
+                    <li>抽纸</li>
+                    <li>洗衣液</li>
+                    <li>肥皂</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">美妆</a>
+                <ul class="detail">
+                    <li>粉底</li>
+                    <li>眼影</li>
+                    <li>口红</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    
+<script src="http://libs.baidu.com/jquery/1.7.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $("div ul.nav>li").mouseenter(function () {
+            $(this).find(".detail").stop(true, true)
+                .show("fast");
+        }).mouseleave(function () {
+            $(this).find(".detail").hide("fast");
+        })
+    });
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
